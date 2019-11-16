@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F4F9F82C1E729C382CD87A2 /* Pods_SharePayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFD1C6D13F9352B364A6073 /* Pods_SharePayTests.framework */; };
+		48603443647FE702A37C88E9 /* Pods_SharePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49184CE1518DC0A7A9E39167 /* Pods_SharePay.framework */; };
+		7DFE657063A9DF38C8B9D07E /* Pods_SharePay_SharePayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */; };
+		A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338A23802DA900AF73BF /* AppDelegate.swift */; };
+		A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338C23802DA900AF73BF /* SceneDelegate.swift */; };
+		A1C3338F23802DA900AF73BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* ViewController.swift */; };
+		A1C3339223802DA900AF73BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339023802DA900AF73BF /* Main.storyboard */; };
+		A1C3339423802DAC00AF73BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339323802DAC00AF73BF /* Assets.xcassets */; };
+		A1C3339723802DAC00AF73BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */; };
+		A1C333A223802DAC00AF73BF /* SharePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333A123802DAC00AF73BF /* SharePayTests.swift */; };
+		A1C333AD23802DAC00AF73BF /* SharePayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C3339E23802DAC00AF73BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C3337F23802DA900AF73BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C3338623802DA900AF73BF;
+			remoteInfo = SharePay;
+		};
+		A1C333A923802DAC00AF73BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C3337F23802DA900AF73BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C3338623802DA900AF73BF;
+			remoteInfo = SharePay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CFD1C6D13F9352B364A6073 /* Pods_SharePayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharePayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3103796CB6AB61E0DDF81D7F /* Pods-SharePay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay.debug.xcconfig"; path = "Target Support Files/Pods-SharePay/Pods-SharePay.debug.xcconfig"; sourceTree = "<group>"; };
+		49184CE1518DC0A7A9E39167 /* Pods_SharePay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharePay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72BC5441F801DE6CC0941A48 /* Pods-SharePayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.release.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.release.xcconfig"; sourceTree = "<group>"; };
+		73DC271320F0EF8370659C01 /* Pods-SharePay-SharePayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay-SharePayUITests.debug.xcconfig"; path = "Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EB1144B9E0464BF107144DB /* Pods-SharePay-SharePayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay-SharePayUITests.release.xcconfig"; path = "Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1C3338723802DA900AF73BF /* SharePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C3338A23802DA900AF73BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C3338C23802DA900AF73BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1C3338E23802DA900AF73BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C3339123802DA900AF73BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C3339323802DAC00AF73BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C3339623802DAC00AF73BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1C3339823802DAC00AF73BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C3339D23802DAC00AF73BF /* SharePayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C333A123802DAC00AF73BF /* SharePayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePayTests.swift; sourceTree = "<group>"; };
+		A1C333A323802DAC00AF73BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C333A823802DAC00AF73BF /* SharePayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePayUITests.swift; sourceTree = "<group>"; };
+		A1C333AE23802DAC00AF73BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37928BCC308EBC36DCF65A8 /* Pods-SharePayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.debug.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharePay_SharePayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF3CCBA840A66935AA583EC /* Pods-SharePay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay.release.xcconfig"; path = "Target Support Files/Pods-SharePay/Pods-SharePay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C3338423802DA900AF73BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48603443647FE702A37C88E9 /* Pods_SharePay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C3339A23802DAC00AF73BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4F9F82C1E729C382CD87A2 /* Pods_SharePayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C333A523802DAC00AF73BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFE657063A9DF38C8B9D07E /* Pods_SharePay_SharePayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C3337E23802DA900AF73BF = {
+			isa = PBXGroup;
+			children = (
+				A1C3338923802DA900AF73BF /* SharePay */,
+				A1C333A023802DAC00AF73BF /* SharePayTests */,
+				A1C333AB23802DAC00AF73BF /* SharePayUITests */,
+				A1C3338823802DA900AF73BF /* Products */,
+				BE3CD7217356F56F01571AB9 /* Pods */,
+				E461F430499453A289E7B21F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C3338823802DA900AF73BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C3338723802DA900AF73BF /* SharePay.app */,
+				A1C3339D23802DAC00AF73BF /* SharePayTests.xctest */,
+				A1C333A823802DAC00AF73BF /* SharePayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C3338923802DA900AF73BF /* SharePay */ = {
+			isa = PBXGroup;
+			children = (
+				A1C3338A23802DA900AF73BF /* AppDelegate.swift */,
+				A1C3338C23802DA900AF73BF /* SceneDelegate.swift */,
+				A1C3338E23802DA900AF73BF /* ViewController.swift */,
+				A1C3339023802DA900AF73BF /* Main.storyboard */,
+				A1C3339323802DAC00AF73BF /* Assets.xcassets */,
+				A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */,
+				A1C3339823802DAC00AF73BF /* Info.plist */,
+			);
+			path = SharePay;
+			sourceTree = "<group>";
+		};
+		A1C333A023802DAC00AF73BF /* SharePayTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1C333A123802DAC00AF73BF /* SharePayTests.swift */,
+				A1C333A323802DAC00AF73BF /* Info.plist */,
+			);
+			path = SharePayTests;
+			sourceTree = "<group>";
+		};
+		A1C333AB23802DAC00AF73BF /* SharePayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */,
+				A1C333AE23802DAC00AF73BF /* Info.plist */,
+			);
+			path = SharePayUITests;
+			sourceTree = "<group>";
+		};
+		BE3CD7217356F56F01571AB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3103796CB6AB61E0DDF81D7F /* Pods-SharePay.debug.xcconfig */,
+				EBF3CCBA840A66935AA583EC /* Pods-SharePay.release.xcconfig */,
+				73DC271320F0EF8370659C01 /* Pods-SharePay-SharePayUITests.debug.xcconfig */,
+				9EB1144B9E0464BF107144DB /* Pods-SharePay-SharePayUITests.release.xcconfig */,
+				B37928BCC308EBC36DCF65A8 /* Pods-SharePayTests.debug.xcconfig */,
+				72BC5441F801DE6CC0941A48 /* Pods-SharePayTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E461F430499453A289E7B21F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49184CE1518DC0A7A9E39167 /* Pods_SharePay.framework */,
+				D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */,
+				2CFD1C6D13F9352B364A6073 /* Pods_SharePayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C3338623802DA900AF73BF /* SharePay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C333B123802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePay" */;
+			buildPhases = (
+				5944E4A17748B7B3CEE5735C /* [CP] Check Pods Manifest.lock */,
+				A1C3338323802DA900AF73BF /* Sources */,
+				A1C3338423802DA900AF73BF /* Frameworks */,
+				A1C3338523802DA900AF73BF /* Resources */,
+				FA1CDF34E8224929F9DE498C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharePay;
+			productName = SharePay;
+			productReference = A1C3338723802DA900AF73BF /* SharePay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C3339C23802DAC00AF73BF /* SharePayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C333B423802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePayTests" */;
+			buildPhases = (
+				26FD06FB97E5362BB2E12C79 /* [CP] Check Pods Manifest.lock */,
+				A1C3339923802DAC00AF73BF /* Sources */,
+				A1C3339A23802DAC00AF73BF /* Frameworks */,
+				A1C3339B23802DAC00AF73BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C3339F23802DAC00AF73BF /* PBXTargetDependency */,
+			);
+			name = SharePayTests;
+			productName = SharePayTests;
+			productReference = A1C3339D23802DAC00AF73BF /* SharePayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1C333A723802DAC00AF73BF /* SharePayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C333B723802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePayUITests" */;
+			buildPhases = (
+				10332408CA88E0ABE7FD4D14 /* [CP] Check Pods Manifest.lock */,
+				A1C333A423802DAC00AF73BF /* Sources */,
+				A1C333A523802DAC00AF73BF /* Frameworks */,
+				A1C333A623802DAC00AF73BF /* Resources */,
+				D4FCEF94473B26BFB908463F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C333AA23802DAC00AF73BF /* PBXTargetDependency */,
+			);
+			name = SharePayUITests;
+			productName = SharePayUITests;
+			productReference = A1C333A823802DAC00AF73BF /* SharePayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C3337F23802DA900AF73BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = knttx;
+				TargetAttributes = {
+					A1C3338623802DA900AF73BF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A1C3339C23802DAC00AF73BF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A1C3338623802DA900AF73BF;
+					};
+					A1C333A723802DAC00AF73BF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A1C3338623802DA900AF73BF;
+					};
+				};
+			};
+			buildConfigurationList = A1C3338223802DA900AF73BF /* Build configuration list for PBXProject "SharePay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C3337E23802DA900AF73BF;
+			productRefGroup = A1C3338823802DA900AF73BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C3338623802DA900AF73BF /* SharePay */,
+				A1C3339C23802DAC00AF73BF /* SharePayTests */,
+				A1C333A723802DAC00AF73BF /* SharePayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C3338523802DA900AF73BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C3339723802DAC00AF73BF /* LaunchScreen.storyboard in Resources */,
+				A1C3339423802DAC00AF73BF /* Assets.xcassets in Resources */,
+				A1C3339223802DA900AF73BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C3339B23802DAC00AF73BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C333A623802DAC00AF73BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10332408CA88E0ABE7FD4D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharePay-SharePayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26FD06FB97E5362BB2E12C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharePayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5944E4A17748B7B3CEE5735C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharePay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4FCEF94473B26BFB908463F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA1CDF34E8224929F9DE498C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharePay/Pods-SharePay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SharePay/Pods-SharePay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharePay/Pods-SharePay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C3338323802DA900AF73BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C3338F23802DA900AF73BF /* ViewController.swift in Sources */,
+				A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */,
+				A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C3339923802DAC00AF73BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C333A223802DAC00AF73BF /* SharePayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C333A423802DAC00AF73BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C333AD23802DAC00AF73BF /* SharePayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C3339F23802DAC00AF73BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C3338623802DA900AF73BF /* SharePay */;
+			targetProxy = A1C3339E23802DAC00AF73BF /* PBXContainerItemProxy */;
+		};
+		A1C333AA23802DAC00AF73BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C3338623802DA900AF73BF /* SharePay */;
+			targetProxy = A1C333A923802DAC00AF73BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1C3339023802DA900AF73BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C3339123802DA900AF73BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C3339623802DAC00AF73BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C333AF23802DAC00AF73BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C333B023802DAC00AF73BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C333B223802DAC00AF73BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3103796CB6AB61E0DDF81D7F /* Pods-SharePay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1C333B323802DAC00AF73BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF3CCBA840A66935AA583EC /* Pods-SharePay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1C333B523802DAC00AF73BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B37928BCC308EBC36DCF65A8 /* Pods-SharePayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharePay.app/SharePay";
+			};
+			name = Debug;
+		};
+		A1C333B623802DAC00AF73BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BC5441F801DE6CC0941A48 /* Pods-SharePayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharePay.app/SharePay";
+			};
+			name = Release;
+		};
+		A1C333B823802DAC00AF73BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DC271320F0EF8370659C01 /* Pods-SharePay-SharePayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharePay;
+			};
+			name = Debug;
+		};
+		A1C333B923802DAC00AF73BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB1144B9E0464BF107144DB /* Pods-SharePay-SharePayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SharePayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.knttx.SharePayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharePay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C3338223802DA900AF73BF /* Build configuration list for PBXProject "SharePay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C333AF23802DAC00AF73BF /* Debug */,
+				A1C333B023802DAC00AF73BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C333B123802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C333B223802DAC00AF73BF /* Debug */,
+				A1C333B323802DAC00AF73BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C333B423802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C333B523802DAC00AF73BF /* Debug */,
+				A1C333B623802DAC00AF73BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C333B723802DAC00AF73BF /* Build configuration list for PBXNativeTarget "SharePayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C333B823802DAC00AF73BF /* Debug */,
+				A1C333B923802DAC00AF73BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C3337F23802DA900AF73BF /* Project object */;
+}
