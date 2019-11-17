@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class HomeViewController: UIViewController {
     
@@ -23,7 +24,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapAddPPNo() {
-        let alert = UIAlertController(title: "PromtPay", message: "Mobile, National ID", preferredStyle: .alert)
+        let alert = UIAlertController(title: "PromtPay", message: "เบอร์มือถือ 10 หลัก,\n เลขบัตรประชาชน 13 หลัก", preferredStyle: .alert)
         alert.addTextField { (textField) in
             textField.keyboardType = .numberPad
             textField.addTarget(alert, action: #selector(alert.textDidChangeInAlert), for: .editingChanged)
@@ -37,6 +38,7 @@ class HomeViewController: UIViewController {
             
             // Perform action
             self.lbPPNo.text = textField
+            
         }
         
         ok.isEnabled = false

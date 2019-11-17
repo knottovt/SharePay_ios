@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WSTagsField
 
 class AddFriendViewController: UIViewController {
 
