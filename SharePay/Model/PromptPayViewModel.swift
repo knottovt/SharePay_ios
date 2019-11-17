@@ -15,9 +15,15 @@ struct PromptPay {
     var QRCode: UIImage
 }
 
-class PromptPayViewModel {
-    func getImage() {
-        Alamo
-    
-    }
-}
+//class PromptPayViewModel {
+//    var QRCode: UIImage
+//    func getImage(number: String) {
+//        Alamofire.request("https://promptpay.io/\(number).png").responseImage { response in
+//
+//
+//            if let image = response.result.value {
+//                self.QRCode.image = image
+//            }
+//        }
+//    }
+//}
