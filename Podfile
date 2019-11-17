@@ -12,7 +12,7 @@ target 'SharePay' do
   pod 'BarcodeScanner'
   pod 'UnderKeyboard'
   pod 'WSTagsField'
-  pod "QRCoder"
+  pod 'QRCoder'
   pod 'Alamofire'
   pod 'AlamofireImage'
 

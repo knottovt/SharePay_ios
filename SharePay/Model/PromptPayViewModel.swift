@@ -6,9 +6,18 @@
 //  Copyright © 2562 knttx. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 import AlamofireImage
 
+struct PromptPay {
+    var id: String!
+    var QRCode: UIImage
+}
 
-
+class PromptPayViewModel {
+    func getImage() {
+        Alamo
+    
+    }
+}

@@ -8,6 +8,9 @@
 
 import UIKit
 import Toast_Swift
+import Alamofire
+import AlamofireImage
+
 
 class HomeViewController: UIViewController {
     
