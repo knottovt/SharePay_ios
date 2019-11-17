@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,13 @@
 		7DFE657063A9DF38C8B9D07E /* Pods_SharePay_SharePayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */; };
 		A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338A23802DA900AF73BF /* AppDelegate.swift */; };
 		A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338C23802DA900AF73BF /* SceneDelegate.swift */; };
-		A1C3338F23802DA900AF73BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* ViewController.swift */; };
+		A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* HomeViewController.swift */; };
 		A1C3339223802DA900AF73BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339023802DA900AF73BF /* Main.storyboard */; };
 		A1C3339423802DAC00AF73BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339323802DAC00AF73BF /* Assets.xcassets */; };
 		A1C3339723802DAC00AF73BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */; };
 		A1C333A223802DAC00AF73BF /* SharePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333A123802DAC00AF73BF /* SharePayTests.swift */; };
 		A1C333AD23802DAC00AF73BF /* SharePayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */; };
+		A1C333BB238072E900AF73BF /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333BA238072E900AF73BF /* AddFriendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		A1C3338723802DA900AF73BF /* SharePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3338A23802DA900AF73BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C3338C23802DA900AF73BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1C3338E23802DA900AF73BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C3338E23802DA900AF73BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A1C3339123802DA900AF73BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C3339323802DAC00AF73BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C3339623802DAC00AF73BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		A1C333A823802DAC00AF73BF /* SharePayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePayUITests.swift; sourceTree = "<group>"; };
 		A1C333AE23802DAC00AF73BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C333BA238072E900AF73BF /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		B37928BCC308EBC36DCF65A8 /* Pods-SharePayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.debug.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharePay_SharePayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF3CCBA840A66935AA583EC /* Pods-SharePay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay.release.xcconfig"; path = "Target Support Files/Pods-SharePay/Pods-SharePay.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 			children = (
 				A1C3338A23802DA900AF73BF /* AppDelegate.swift */,
 				A1C3338C23802DA900AF73BF /* SceneDelegate.swift */,
-				A1C3338E23802DA900AF73BF /* ViewController.swift */,
+				A1C3338E23802DA900AF73BF /* HomeViewController.swift */,
+				A1C333BA238072E900AF73BF /* AddFriendViewController.swift */,
 				A1C3339023802DA900AF73BF /* Main.storyboard */,
 				A1C3339323802DAC00AF73BF /* Assets.xcassets */,
 				A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */,
@@ -155,7 +158,6 @@
 				B37928BCC308EBC36DCF65A8 /* Pods-SharePayTests.debug.xcconfig */,
 				72BC5441F801DE6CC0941A48 /* Pods-SharePayTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,7 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C3338F23802DA900AF73BF /* ViewController.swift in Sources */,
+				A1C333BB238072E900AF73BF /* AddFriendViewController.swift in Sources */,
+				A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */,
 				A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */,
 				A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */,
 			);

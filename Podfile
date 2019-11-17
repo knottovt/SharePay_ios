@@ -11,6 +11,10 @@ target 'SharePay' do
   pod 'Toast-Swift'
   pod 'BarcodeScanner'
   pod 'UnderKeyboard'
+  pod 'WSTagsField'
+  pod "QRCoder"
+  pod 'Alamofire'
+  pod 'AlamofireImage'
 
   target 'SharePayTests' do
     inherit! :search_paths

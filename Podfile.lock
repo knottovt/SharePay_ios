@@ -1,28 +1,45 @@
 PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - BarcodeScanner (4.1.3)
+  - QRCoder (1.1.0)
   - Toast-Swift (5.0.0)
   - TPKeyboardAvoidingSwift (3.2)
   - UnderKeyboard (13.0.2)
+  - WSTagsField (5.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - BarcodeScanner
+  - QRCoder
   - Toast-Swift
   - TPKeyboardAvoidingSwift
   - UnderKeyboard
+  - WSTagsField
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - BarcodeScanner
+    - QRCoder
     - Toast-Swift
     - TPKeyboardAvoidingSwift
     - UnderKeyboard
+    - WSTagsField
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
+  QRCoder: cbd2bee531cc86d286df7942334cfed94c803ae4
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
   TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
   UnderKeyboard: 79ea6feb497af99c1856aaae0ab8ded3c739f745
+  WSTagsField: d57a287fd552934db1d93a85d38abbf74b067d6a
 
-PODFILE CHECKSUM: 63161ed9c75615a2ae8c3cdb57f187a6e4e51df7
+PODFILE CHECKSUM: 7d47d911bf5d80662646a5a734b0457328c89f79
 
 COCOAPODS: 1.8.4
