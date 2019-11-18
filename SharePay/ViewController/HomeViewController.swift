@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Toast_Swift
-import Alamofire
 import AlamofireImage
+import Toast_Swift
 
 
 class HomeViewController: UIViewController {
@@ -20,11 +19,15 @@ class HomeViewController: UIViewController {
     @IBOutlet var QRImage: UIImageView!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.lbPPNo.text = ""
+        
     }
+    
     
     @IBAction func didTapAddPPNo() {
         let alert = UIAlertController(title: "PromtPay", message: "เบอร์มือถือ 10 หลัก,\n เลขบัตรประชาชน 13 หลัก", preferredStyle: .alert)
@@ -40,7 +43,10 @@ class HomeViewController: UIViewController {
             guard let textField = alert.textFields?[0].text else { return }
             
             // Perform action
-            self.lbPPNo.text = textField
+            self.setPromptPaySection(id: textField)
+            
+            
+            
             
         }
         
@@ -48,6 +54,12 @@ class HomeViewController: UIViewController {
         alert.addAction(cancel)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func setPromptPaySection(id:String) {
+        let url = URL(string: "https://promptpay.io/\(id).png")
+        self.lbPPNo.text = id
+        self.QRImage.af_setImage(withURL: url!)
     }
     
     @IBAction func didTapAddButton() {
@@ -59,6 +71,7 @@ class HomeViewController: UIViewController {
             present(vc, animated: true, completion: nil)
         }
     }
+    
 }
 
 extension UIAlertController {

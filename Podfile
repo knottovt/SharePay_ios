@@ -15,6 +15,14 @@ target 'SharePay' do
   pod 'QRCoder'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'RxSwift'
+  pod 'RxTheme'
+  pod 'RxCocoa'
+  pod 'RxBiBinding'
+  pod 'RxAlamofire'
+  pod 'RxDataSources'
+  pod 'MBProgressHUD'
+  pod 'RxGesture'
 
   target 'SharePayTests' do
     inherit! :search_paths

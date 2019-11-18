@@ -10,7 +10,7 @@
 		2F4F9F82C1E729C382CD87A2 /* Pods_SharePayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFD1C6D13F9352B364A6073 /* Pods_SharePayTests.framework */; };
 		48603443647FE702A37C88E9 /* Pods_SharePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49184CE1518DC0A7A9E39167 /* Pods_SharePay.framework */; };
 		7DFE657063A9DF38C8B9D07E /* Pods_SharePay_SharePayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */; };
-		A1806B942380FCD600EF7429 /* PromptPayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1806B932380FCD600EF7429 /* PromptPayViewModel.swift */; };
+		A1806B942380FCD600EF7429 /* PromptPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1806B932380FCD600EF7429 /* PromptPay.swift */; };
 		A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338A23802DA900AF73BF /* AppDelegate.swift */; };
 		A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338C23802DA900AF73BF /* SceneDelegate.swift */; };
 		A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* HomeViewController.swift */; };
@@ -46,7 +46,7 @@
 		72BC5441F801DE6CC0941A48 /* Pods-SharePayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.release.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.release.xcconfig"; sourceTree = "<group>"; };
 		73DC271320F0EF8370659C01 /* Pods-SharePay-SharePayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay-SharePayUITests.debug.xcconfig"; path = "Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EB1144B9E0464BF107144DB /* Pods-SharePay-SharePayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePay-SharePayUITests.release.xcconfig"; path = "Target Support Files/Pods-SharePay-SharePayUITests/Pods-SharePay-SharePayUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A1806B932380FCD600EF7429 /* PromptPayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPayViewModel.swift; sourceTree = "<group>"; };
+		A1806B932380FCD600EF7429 /* PromptPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPay.swift; sourceTree = "<group>"; };
 		A1C3338723802DA900AF73BF /* SharePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3338A23802DA900AF73BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C3338C23802DA900AF73BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		A1806B952380FCDC00EF7429 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A1806B932380FCD600EF7429 /* PromptPayViewModel.swift */,
+				A1806B932380FCD600EF7429 /* PromptPay.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 				A1C333BB238072E900AF73BF /* AddFriendViewController.swift in Sources */,
 				A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */,
 				A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */,
-				A1806B942380FCD600EF7429 /* PromptPayViewModel.swift in Sources */,
+				A1806B942380FCD600EF7429 /* PromptPay.swift in Sources */,
 				A1C3338D23802DA900AF73BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
