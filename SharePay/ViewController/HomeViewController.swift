@@ -59,6 +59,8 @@ class HomeViewController: UIViewController {
         let url = URL(string: "https://promptpay.io/\(id).png")
         self.lbPPNo.text = id
         self.QRImage.af_setImage(withURL: url!)
+    
+        self.view.makeToast("PromptPay: \(id)", position: .center)
     }
     
     @IBAction func didTapAddButton() {
