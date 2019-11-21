@@ -23,6 +23,7 @@ target 'SharePay' do
   pod 'RxDataSources'
   pod 'MBProgressHUD'
   pod 'RxGesture'
+  pod 'XLPagerTabStrip'
 
   target 'SharePayTests' do
     inherit! :search_paths

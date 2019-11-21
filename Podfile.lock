@@ -34,6 +34,7 @@ PODS:
   - TPKeyboardAvoidingSwift (3.2)
   - UnderKeyboard (13.0.2)
   - WSTagsField (5.2.0)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - TPKeyboardAvoidingSwift
   - UnderKeyboard
   - WSTagsField
+  - XLPagerTabStrip
 
 SPEC REPOS:
   trunk:
@@ -73,6 +75,7 @@ SPEC REPOS:
     - TPKeyboardAvoidingSwift
     - UnderKeyboard
     - WSTagsField
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -93,7 +96,8 @@ SPEC CHECKSUMS:
   TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
   UnderKeyboard: 79ea6feb497af99c1856aaae0ab8ded3c739f745
   WSTagsField: d57a287fd552934db1d93a85d38abbf74b067d6a
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: cab9f0aaea532110424c52495676942fbb8023ab
+PODFILE CHECKSUM: f053f8a750be3e72c36d6392f3d40c2a78d774a0
 
 COCOAPODS: 1.8.4
