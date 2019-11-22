@@ -8,22 +8,28 @@
 
 import UIKit
 import AlamofireImage
-import Toast_Swift
+import JGProgressHUD
 
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet var addButton: UIBarButtonItem!
-    @IBOutlet var addPPNo: UIButton!
-    @IBOutlet var lbPPNo: UILabel!
-    @IBOutlet var QRImage: UIImageView!
+    @IBOutlet var addFriendButton: UIBarButtonItem!
+    
+    @IBOutlet var promptPayView:UIView!
+    @IBOutlet var addPromptPayButton: UIButton!
+    @IBOutlet var promptPayQRImage: UIImageView!
+    
+    let loading = JGProgressHUD(style: .dark)
     
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.lbPPNo.text = ""
+        self.addPromptPayButton.setTitle("Add PromptPay", for: .normal)
+        self.promptPayView.layer.borderWidth = 1.0
+        self.promptPayView.layer.borderColor = UIColor.purple.cgColor
+        
         
     }
     
@@ -42,35 +48,39 @@ class HomeViewController: UIViewController {
             guard let textField = alert.textFields?[0].text else { return }
             
             // Perform action
-            self.setPromptPaySection(id: textField)
-            
-            
-            
-            
+            self.setPromptPaySection(promptPayID: textField)
+
         }
-        
         ok.isEnabled = false
         alert.addAction(cancel)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
     }
     
-    func setPromptPaySection(id:String) {
-        let url = URL(string: "https://promptpay.io/\(id).png")
-        self.lbPPNo.text = id
-        self.QRImage.af_setImage(withURL: url!)
-    
-        self.view.makeToast("PromptPay: \(id)", position: .center)
+    func setPromptPaySection(promptPayID:String) {
+        self.showLoading(text: "PromptPay:\n\(promptPayID)")
+        let url = URL(string: "https://promptpay.io/\(promptPayID).png")
+        self.promptPayQRImage.af_setImage(withURL: url!)
+        self.addPromptPayButton.setTitle(promptPayID, for: .normal)
+        self.hideLoading()
     }
     
-    @IBAction func didTapAddButton() {
+    @IBAction func didTapAddFriendButton() {
         // Safe Present
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddFriendViewController") as? AddFriendViewController
-        {
-            vc.modalPresentationStyle = .fullScreen
-            
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddFriendViewController") as? AddFriendViewController {
+            vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: true, completion: nil)
         }
+    }
+    
+    
+    func showLoading(text: String? = "Loading") {
+        loading.textLabel.text = text
+        loading.show(in: self.view)
+    }
+    
+    func hideLoading(){
+        loading.dismiss(afterDelay: 1)
     }
     
 }

@@ -21,9 +21,9 @@ target 'SharePay' do
   pod 'RxBiBinding'
   pod 'RxAlamofire'
   pod 'RxDataSources'
-  pod 'MBProgressHUD'
   pod 'RxGesture'
   pod 'XLPagerTabStrip'
+  pod 'JGProgressHUD'
 
   target 'SharePayTests' do
     inherit! :search_paths
