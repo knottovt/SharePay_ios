@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import AlamofireImage
-import JGProgressHUD
+import RxSwift
+import RxCocoa
 
-
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     @IBOutlet var addFriendButton: UIBarButtonItem!
     
@@ -19,22 +18,29 @@ class HomeViewController: UIViewController {
     @IBOutlet var addPromptPayButton: UIButton!
     @IBOutlet var promptPayQRImage: UIImageView!
     
-    let loading = JGProgressHUD(style: .dark)
+    private let bag = DisposeBag()
     
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func configure() {
         self.addPromptPayButton.setTitle("Add PromptPay", for: .normal)
         self.promptPayView.layer.borderWidth = 1.0
         self.promptPayView.layer.borderColor = UIColor.purple.cgColor
+    }
+    
+    func bindViewModel() {
+        self.addPromptPayButton.rx.tap.bind { [weak self] in
+            self?.alertAddPromptPay()
+        }.disposed(by: self.bag)
         
-        
+        self.addFriendButton.rx.tap.bind { [weak self] in
+            let vc = AddFriendViewController.create()
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overFullScreen
+            self?.present(vc, animated: true, completion: nil)
+        }.disposed(by: self.bag)
     }
     
     
-    @IBAction func didTapAddPPNo() {
+    func alertAddPromptPay() {
         let alert = UIAlertController(title: "PromtPay", message: "เบอร์มือถือ 10 หลัก,\n เลขบัตรประชาชน 13 หลัก", preferredStyle: .alert)
         alert.addTextField { (textField) in
             textField.keyboardType = .numberPad
@@ -45,42 +51,16 @@ class HomeViewController: UIViewController {
         let ok = UIAlertAction(title: "OK", style: .default) { (action) in
             
             // Should never happen
-            guard let textField = alert.textFields?[0].text else { return }
+            guard let text = alert.textFields?.first?.text else { return }
             
             // Perform action
-            self.setPromptPaySection(promptPayID: textField)
+//            self.setPromptPaySection(promptPayID: textField)
 
         }
         ok.isEnabled = false
         alert.addAction(cancel)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    func setPromptPaySection(promptPayID:String) {
-        self.showLoading(text: "PromptPay:\n\(promptPayID)")
-        let url = URL(string: "https://promptpay.io/\(promptPayID).png")
-        self.promptPayQRImage.af_setImage(withURL: url!)
-        self.addPromptPayButton.setTitle(promptPayID, for: .normal)
-        self.hideLoading()
-    }
-    
-    @IBAction func didTapAddFriendButton() {
-        // Safe Present
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddFriendViewController") as? AddFriendViewController {
-            vc.modalPresentationStyle = .overFullScreen
-            present(vc, animated: true, completion: nil)
-        }
-    }
-    
-    
-    func showLoading(text: String? = "Loading") {
-        loading.textLabel.text = text
-        loading.show(in: self.view)
-    }
-    
-    func hideLoading(){
-        loading.dismiss(afterDelay: 1)
     }
     
 }
@@ -92,7 +72,7 @@ extension UIAlertController {
     }
 
     @objc func textDidChangeInAlert() {
-        if let number = textFields?[0].text,
+        if let number = textFields?.first?.text,
             let action = actions.last {
             action.isEnabled = isValidNumber(number)
         }
