@@ -9,20 +9,29 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Action
 
-class AddFriendViewController: BaseViewController {
+class AddPersonViewController: BaseViewController {
 
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     
+    var addedCompletion:CocoaAction?
     private let bag = DisposeBag()
     
-    class func create() -> AddFriendViewController {
+    class func create() -> AddPersonViewController {
         return self.newInstance(of: self, storyboard: .main)
     }
     
+    class func present(at viewController: UIViewController, addedCompletion:CocoaAction) {
+        let vc = self.newInstance(of: self, storyboard: .main)
+        vc.addedCompletion = addedCompletion
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        viewController.present(vc, animated: true, completion: nil)
+    }
+    
     func configure() {
-        
         self.backgroundView.rx.tapGesture { (_, delegate) in
             delegate.simultaneousRecognitionPolicy = .never
         }.when(.recognized).bind { [weak self] (_) in

@@ -17,6 +17,13 @@
 		8B5A5EF72635C0D700E62180 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5EF62635C0D700E62180 /* UIView.swift */; };
 		8B5A5EFF2635C25500E62180 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5EFE2635C25500E62180 /* UIImageView.swift */; };
 		8B5A5F042635C29C00E62180 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5F032635C29C00E62180 /* String.swift */; };
+		8BA834C0263F022C0005AEC0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834BF263F022C0005AEC0 /* Person.swift */; };
+		8BA834C2263F04A40005AEC0 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834C1263F04A40005AEC0 /* SessionManager.swift */; };
+		8BA834C4263F06130005AEC0 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834C3263F06130005AEC0 /* Keys.swift */; };
+		8BA834C6263F07BA0005AEC0 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834C5263F07BA0005AEC0 /* PersonsListViewController.swift */; };
+		8BA834CD263F0ADF0005AEC0 /* PersonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834CB263F0ADF0005AEC0 /* PersonsListTableViewCell.swift */; };
+		8BA834CE263F0ADF0005AEC0 /* PersonsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */; };
+		8BA834D1263F0BEF0005AEC0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834D0263F0BEF0005AEC0 /* UITableView.swift */; };
 		8BE3B7612635C7A100A21497 /* PromptPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE3B7602635C7A100A21497 /* PromptPay.swift */; };
 		A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338A23802DA900AF73BF /* AppDelegate.swift */; };
 		A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* HomeViewController.swift */; };
@@ -25,7 +32,7 @@
 		A1C3339723802DAC00AF73BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339523802DAC00AF73BF /* LaunchScreen.storyboard */; };
 		A1C333A223802DAC00AF73BF /* SharePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333A123802DAC00AF73BF /* SharePayTests.swift */; };
 		A1C333AD23802DAC00AF73BF /* SharePayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */; };
-		A1C333BB238072E900AF73BF /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333BA238072E900AF73BF /* AddFriendViewController.swift */; };
+		A1C333BB238072E900AF73BF /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C333BA238072E900AF73BF /* AddPersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		8B5A5EF62635C0D700E62180 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8B5A5EFE2635C25500E62180 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		8B5A5F032635C29C00E62180 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8BA834BF263F022C0005AEC0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8BA834C1263F04A40005AEC0 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		8BA834C3263F06130005AEC0 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		8BA834C5263F07BA0005AEC0 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		8BA834CB263F0ADF0005AEC0 /* PersonsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewCell.swift; sourceTree = "<group>"; };
+		8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsListTableViewCell.xib; sourceTree = "<group>"; };
+		8BA834D0263F0BEF0005AEC0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		8BE3B7602635C7A100A21497 /* PromptPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPay.swift; sourceTree = "<group>"; };
 		8E8DECDD34D0BEC6A2E38580 /* Pods-SharePayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.debug.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1C3338723802DA900AF73BF /* SharePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +88,7 @@
 		A1C333A823802DAC00AF73BF /* SharePayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C333AC23802DAC00AF73BF /* SharePayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePayUITests.swift; sourceTree = "<group>"; };
 		A1C333AE23802DAC00AF73BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1C333BA238072E900AF73BF /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		A1C333BA238072E900AF73BF /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		D243591BC920726FB2821956 /* Pods_SharePay_SharePayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharePay_SharePayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFB35FC1AEB0E2ED4757F71 /* Pods-SharePayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.release.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5A5EE52635C04E00E62180 /* Storyboard.swift */,
+				8BA834C3263F06130005AEC0 /* Keys.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -139,15 +154,42 @@
 				8B5A5EE02635C01600E62180 /* UIViewController.swift */,
 				8B5A5EF62635C0D700E62180 /* UIView.swift */,
 				8B5A5EFE2635C25500E62180 /* UIImageView.swift */,
+				8BA834D0263F0BEF0005AEC0 /* UITableView.swift */,
 			);
 			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		8BA834C7263F0A140005AEC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BA834CF263F0AEC0005AEC0 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BA834C8263F0A1B0005AEC0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8BA834C1263F04A40005AEC0 /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8BA834CF263F0AEC0005AEC0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8BA834CB263F0ADF0005AEC0 /* PersonsListTableViewCell.swift */,
+				8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		A1806B922380FBFC00EF7429 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A1C3338E23802DA900AF73BF /* HomeViewController.swift */,
-				A1C333BA238072E900AF73BF /* AddFriendViewController.swift */,
+				A1C333BA238072E900AF73BF /* AddPersonViewController.swift */,
+				8BA834C5263F07BA0005AEC0 /* PersonsListViewController.swift */,
 				8B5A5EB82635BA4E00E62180 /* BaseViewController.swift */,
 				8B5A5EDB2635BD5000E62180 /* PromptPayQRCodeViewController.swift */,
 			);
@@ -158,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8BE3B7602635C7A100A21497 /* PromptPay.swift */,
+				8BA834BF263F022C0005AEC0 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,13 +231,15 @@
 			isa = PBXGroup;
 			children = (
 				A1C3338A23802DA900AF73BF /* AppDelegate.swift */,
+				A1C3339323802DAC00AF73BF /* Assets.xcassets */,
 				8B5A5EEA2635C06E00E62180 /* Constants */,
 				8B5A5EEE2635C07500E62180 /* Extensions */,
-				A1806B952380FCDC00EF7429 /* Models */,
-				A1806B922380FBFC00EF7429 /* ViewControllers */,
-				8B5A5EC32635BA5F00E62180 /* Storyboards */,
-				A1C3339323802DAC00AF73BF /* Assets.xcassets */,
 				A1C3339823802DAC00AF73BF /* Info.plist */,
+				8BA834C8263F0A1B0005AEC0 /* Managers */,
+				A1806B952380FCDC00EF7429 /* Models */,
+				8B5A5EC32635BA5F00E62180 /* Storyboards */,
+				A1806B922380FBFC00EF7429 /* ViewControllers */,
+				8BA834C7263F0A140005AEC0 /* Views */,
 			);
 			path = SharePay;
 			sourceTree = "<group>";
@@ -351,6 +396,7 @@
 			files = (
 				A1C3339723802DAC00AF73BF /* LaunchScreen.storyboard in Resources */,
 				A1C3339423802DAC00AF73BF /* Assets.xcassets in Resources */,
+				8BA834CE263F0ADF0005AEC0 /* PersonsListTableViewCell.xib in Resources */,
 				A1C3339223802DA900AF73BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,16 +526,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B5A5EE12635C01600E62180 /* UIViewController.swift in Sources */,
+				8BA834C6263F07BA0005AEC0 /* PersonsListViewController.swift in Sources */,
+				8BA834CD263F0ADF0005AEC0 /* PersonsListTableViewCell.swift in Sources */,
 				8B5A5F042635C29C00E62180 /* String.swift in Sources */,
 				8B5A5EDC2635BD5000E62180 /* PromptPayQRCodeViewController.swift in Sources */,
 				8B5A5EB92635BA4E00E62180 /* BaseViewController.swift in Sources */,
-				A1C333BB238072E900AF73BF /* AddFriendViewController.swift in Sources */,
+				A1C333BB238072E900AF73BF /* AddPersonViewController.swift in Sources */,
 				8B5A5EE62635C04E00E62180 /* Storyboard.swift in Sources */,
+				8BA834C0263F022C0005AEC0 /* Person.swift in Sources */,
 				8BE3B7612635C7A100A21497 /* PromptPay.swift in Sources */,
 				A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */,
+				8BA834D1263F0BEF0005AEC0 /* UITableView.swift in Sources */,
 				8B5A5EFF2635C25500E62180 /* UIImageView.swift in Sources */,
 				A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */,
+				8BA834C4263F06130005AEC0 /* Keys.swift in Sources */,
 				8B5A5EF72635C0D700E62180 /* UIView.swift in Sources */,
+				8BA834C2263F04A40005AEC0 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

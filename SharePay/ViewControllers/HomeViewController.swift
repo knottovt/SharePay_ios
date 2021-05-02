@@ -32,7 +32,7 @@ class HomeViewController: BaseViewController {
         }.disposed(by: self.bag)
         
         self.addFriendButton.rx.tap.bind { [weak self] in
-            let vc = AddFriendViewController.create()
+            let vc = AddPersonViewController.create()
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .overFullScreen
             self?.present(vc, animated: true, completion: nil)
