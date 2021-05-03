@@ -7,22 +7,38 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class SessionManager: NSObject {
     
     static let shared:SessionManager = SessionManager()
+    private let bag = DisposeBag()
     
-    var promptPay:PromptPay?
+    var promptPay = BehaviorRelay<PromptPay?>(value: nil)
     
-    var persons:[Person] = []
+    var persons = BehaviorRelay<[Person]>(value: [])
     
     override init() {
         super.init()
+        self.loadSession()
         
+        self.promptPay.bind { (promptPay) in
+            UserDataManager.shared.saveObject(promptPay, key: Keys.promptPay)
+        }.disposed(by: self.bag)
+        
+        self.persons.bind { (persons) in
+            UserDataManager.shared.saveObject(persons, key: Keys.persons)
+        }.disposed(by: self.bag)
     }
     
     func loadSession() {
-        
+        if let persons = UserDataManager.shared.retrieveObject(type: [Person].self, key: Keys.persons) {
+            self.persons.accept(persons)
+        }
+        if let promptPay = UserDataManager.shared.retrieveObject(type: PromptPay.self, key: Keys.promptPay) {
+            self.promptPay.accept(promptPay)
+        }
     }
     
 }

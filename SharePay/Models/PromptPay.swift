@@ -10,6 +10,10 @@ import Foundation
 
 struct PromptPay:Codable {
     var id:String
+    
+    init(id:String) {
+        self.id = id
+    }
 }
 
 extension PromptPay {

@@ -41,4 +41,18 @@ class ViewController: UIViewController {
         }
     }
     
+    func doneToolbar() -> UIToolbar {
+        let toolbar = UIToolbar()
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.didTapDoneToolbar))
+        toolbar.items = [spacer, done]
+        toolbar.isTranslucent = false
+        toolbar.sizeToFit()
+        return toolbar
+    }
+    
+    @objc func didTapDoneToolbar() {
+        self.view.endEditing(true)
+    }
+    
 }

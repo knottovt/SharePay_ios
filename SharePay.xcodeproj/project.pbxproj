@@ -17,6 +17,12 @@
 		8B5A5EF72635C0D700E62180 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5EF62635C0D700E62180 /* UIView.swift */; };
 		8B5A5EFF2635C25500E62180 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5EFE2635C25500E62180 /* UIImageView.swift */; };
 		8B5A5F042635C29C00E62180 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A5F032635C29C00E62180 /* String.swift */; };
+		8B93B772263FA66200206FF9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B771263FA66200206FF9 /* UserDataManager.swift */; };
+		8B93B774263FC58500206FF9 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B773263FC58500206FF9 /* UIAlertController.swift */; };
+		8B93B776263FDF0D00206FF9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B775263FDF0D00206FF9 /* Array.swift */; };
+		8B93B778263FF3BC00206FF9 /* PaidItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B777263FF3BC00206FF9 /* PaidItem.swift */; };
+		8B93B77A263FF5F100206FF9 /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B779263FF5F100206FF9 /* PersonDetail.swift */; };
+		8B93B77C263FF6E400206FF9 /* AddPaidItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93B77B263FF6E400206FF9 /* AddPaidItemViewController.swift */; };
 		8BA834C0263F022C0005AEC0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834BF263F022C0005AEC0 /* Person.swift */; };
 		8BA834C2263F04A40005AEC0 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834C1263F04A40005AEC0 /* SessionManager.swift */; };
 		8BA834C4263F06130005AEC0 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834C3263F06130005AEC0 /* Keys.swift */; };
@@ -66,6 +72,12 @@
 		8B5A5EF62635C0D700E62180 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8B5A5EFE2635C25500E62180 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		8B5A5F032635C29C00E62180 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8B93B771263FA66200206FF9 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		8B93B773263FC58500206FF9 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		8B93B775263FDF0D00206FF9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		8B93B777263FF3BC00206FF9 /* PaidItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidItem.swift; sourceTree = "<group>"; };
+		8B93B779263FF5F100206FF9 /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
+		8B93B77B263FF6E400206FF9 /* AddPaidItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaidItemViewController.swift; sourceTree = "<group>"; };
 		8BA834BF263F022C0005AEC0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8BA834C1263F04A40005AEC0 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		8BA834C3263F06130005AEC0 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
@@ -144,6 +156,7 @@
 			children = (
 				8B5A5EF22635C07C00E62180 /* UIExtensions */,
 				8B5A5F032635C29C00E62180 /* String.swift */,
+				8B93B775263FDF0D00206FF9 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +168,7 @@
 				8B5A5EF62635C0D700E62180 /* UIView.swift */,
 				8B5A5EFE2635C25500E62180 /* UIImageView.swift */,
 				8BA834D0263F0BEF0005AEC0 /* UITableView.swift */,
+				8B93B773263FC58500206FF9 /* UIAlertController.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -171,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA834C1263F04A40005AEC0 /* SessionManager.swift */,
+				8B93B771263FA66200206FF9 /* UserDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -188,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C3338E23802DA900AF73BF /* HomeViewController.swift */,
+				8B93B77B263FF6E400206FF9 /* AddPaidItemViewController.swift */,
 				A1C333BA238072E900AF73BF /* AddPersonViewController.swift */,
 				8BA834C5263F07BA0005AEC0 /* PersonsListViewController.swift */,
 				8B5A5EB82635BA4E00E62180 /* BaseViewController.swift */,
@@ -201,6 +217,8 @@
 			children = (
 				8BE3B7602635C7A100A21497 /* PromptPay.swift */,
 				8BA834BF263F022C0005AEC0 /* Person.swift */,
+				8B93B779263FF5F100206FF9 /* PersonDetail.swift */,
+				8B93B777263FF3BC00206FF9 /* PaidItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -526,10 +544,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B5A5EE12635C01600E62180 /* UIViewController.swift in Sources */,
+				8B93B77C263FF6E400206FF9 /* AddPaidItemViewController.swift in Sources */,
+				8B93B776263FDF0D00206FF9 /* Array.swift in Sources */,
 				8BA834C6263F07BA0005AEC0 /* PersonsListViewController.swift in Sources */,
+				8B93B772263FA66200206FF9 /* UserDataManager.swift in Sources */,
 				8BA834CD263F0ADF0005AEC0 /* PersonsListTableViewCell.swift in Sources */,
+				8B93B77A263FF5F100206FF9 /* PersonDetail.swift in Sources */,
+				8B93B778263FF3BC00206FF9 /* PaidItem.swift in Sources */,
 				8B5A5F042635C29C00E62180 /* String.swift in Sources */,
 				8B5A5EDC2635BD5000E62180 /* PromptPayQRCodeViewController.swift in Sources */,
+				8B93B774263FC58500206FF9 /* UIAlertController.swift in Sources */,
 				8B5A5EB92635BA4E00E62180 /* BaseViewController.swift in Sources */,
 				A1C333BB238072E900AF73BF /* AddPersonViewController.swift in Sources */,
 				8B5A5EE62635C04E00E62180 /* Storyboard.swift in Sources */,

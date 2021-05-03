@@ -10,33 +10,50 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class HomeViewController: BaseViewController {
+class HomeViewModel {
     
-    @IBOutlet var addFriendButton: UIBarButtonItem!
+    var dataSource = BehaviorRelay<[PaidItem]>(value: [])
     
-    @IBOutlet var promptPayView:UIView!
-    @IBOutlet var addPromptPayButton: UIButton!
-    @IBOutlet var promptPayQRImage: UIImageView!
-    
-    private let bag = DisposeBag()
-    
-    func configure() {
-        self.addPromptPayButton.setTitle("Add PromptPay", for: .normal)
-        self.promptPayView.layer.borderWidth = 1.0
-        self.promptPayView.layer.borderColor = UIColor.purple.cgColor
+    init() {
+        
     }
     
-    func bindViewModel() {
-        self.addPromptPayButton.rx.tap.bind { [weak self] in
-            self?.alertAddPromptPay()
-        }.disposed(by: self.bag)
+    func addPaidItem() {
         
-        self.addFriendButton.rx.tap.bind { [weak self] in
-            let vc = AddPersonViewController.create()
-            vc.modalTransitionStyle = .crossDissolve
-            vc.modalPresentationStyle = .overFullScreen
-            self?.present(vc, animated: true, completion: nil)
-        }.disposed(by: self.bag)
+    }
+}
+
+class HomeViewController: BaseViewController {
+    
+    @IBOutlet weak var tableView:UITableView!
+    
+    var viewModel = HomeViewModel()
+    private let bag = DisposeBag()
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
+    func configure() {
+        self.tableView.tableFooterView = UIView()
+        self.tableView.rx.setDelegate(self).disposed(by: self.bag)
+        self.configureBarButton()
+    }
+    
+    func configureBarButton() {
+        let personsListButton = UIBarButtonItem(image: UIImage(systemName: "person.2.circle"), style: .plain, target: self, action: #selector(self.showPersonsList))
+        self.navigationItem.rightBarButtonItems = [personsListButton]
+    }
+    
+    @objc func showPersonsList() {
+        let vc = PersonsListViewController.create()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    func bindViewModel() {
+        
     }
     
     
@@ -46,16 +63,10 @@ class HomeViewController: BaseViewController {
             textField.keyboardType = .numberPad
             textField.addTarget(alert, action: #selector(alert.textDidChangeInAlert), for: .editingChanged)
         }
-        
         let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         let ok = UIAlertAction(title: "OK", style: .default) { (action) in
-            
-            // Should never happen
-            guard let text = alert.textFields?.first?.text else { return }
-            
-            // Perform action
-//            self.setPromptPaySection(promptPayID: textField)
-
+            guard let promptPayNumber = alert.textFields?.first?.text else { return }
+            SessionManager.shared.promptPay.accept(PromptPay(id: promptPayNumber))
         }
         ok.isEnabled = false
         alert.addAction(cancel)
@@ -79,3 +90,8 @@ extension UIAlertController {
     }
 }
 
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+}
