@@ -31,6 +31,10 @@
 		8BA834CE263F0ADF0005AEC0 /* PersonsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */; };
 		8BA834D1263F0BEF0005AEC0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA834D0263F0BEF0005AEC0 /* UITableView.swift */; };
 		8BE3B7612635C7A100A21497 /* PromptPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE3B7602635C7A100A21497 /* PromptPay.swift */; };
+		8BEC735B26401BFE0049004F /* HomeTableHeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC735A26401BFE0049004F /* HomeTableHeaderSectionView.swift */; };
+		8BEC735D26401C040049004F /* HomeTableHeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC735C26401C040049004F /* HomeTableHeaderSectionView.xib */; };
+		8BEC736026402A2C0049004F /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC735F26402A2C0049004F /* HomeTableHeaderView.swift */; };
+		8BEC736226402A300049004F /* HomeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC736126402A300049004F /* HomeTableHeaderView.xib */; };
 		A1C3338B23802DA900AF73BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338A23802DA900AF73BF /* AppDelegate.swift */; };
 		A1C3338F23802DA900AF73BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3338E23802DA900AF73BF /* HomeViewController.swift */; };
 		A1C3339223802DA900AF73BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C3339023802DA900AF73BF /* Main.storyboard */; };
@@ -86,6 +90,10 @@
 		8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsListTableViewCell.xib; sourceTree = "<group>"; };
 		8BA834D0263F0BEF0005AEC0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		8BE3B7602635C7A100A21497 /* PromptPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPay.swift; sourceTree = "<group>"; };
+		8BEC735A26401BFE0049004F /* HomeTableHeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderSectionView.swift; sourceTree = "<group>"; };
+		8BEC735C26401C040049004F /* HomeTableHeaderSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableHeaderSectionView.xib; sourceTree = "<group>"; };
+		8BEC735F26402A2C0049004F /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
+		8BEC736126402A300049004F /* HomeTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableHeaderView.xib; sourceTree = "<group>"; };
 		8E8DECDD34D0BEC6A2E38580 /* Pods-SharePayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharePayTests.debug.xcconfig"; path = "Target Support Files/Pods-SharePayTests/Pods-SharePayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1C3338723802DA900AF73BF /* SharePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3338A23802DA900AF73BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				8BA834CF263F0AEC0005AEC0 /* TableViewCells */,
+				8BEC735E26402A030049004F /* TableHeaderSectionViews */,
+				8BEC736326402F5B0049004F /* TableHeaderViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +207,24 @@
 				8BA834CC263F0ADF0005AEC0 /* PersonsListTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8BEC735E26402A030049004F /* TableHeaderSectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				8BEC735A26401BFE0049004F /* HomeTableHeaderSectionView.swift */,
+				8BEC735C26401C040049004F /* HomeTableHeaderSectionView.xib */,
+			);
+			path = TableHeaderSectionViews;
+			sourceTree = "<group>";
+		};
+		8BEC736326402F5B0049004F /* TableHeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				8BEC735F26402A2C0049004F /* HomeTableHeaderView.swift */,
+				8BEC736126402A300049004F /* HomeTableHeaderView.xib */,
+			);
+			path = TableHeaderViews;
 			sourceTree = "<group>";
 		};
 		A1806B922380FBFC00EF7429 /* ViewControllers */ = {
@@ -416,6 +444,8 @@
 				A1C3339423802DAC00AF73BF /* Assets.xcassets in Resources */,
 				8BA834CE263F0ADF0005AEC0 /* PersonsListTableViewCell.xib in Resources */,
 				A1C3339223802DA900AF73BF /* Main.storyboard in Resources */,
+				8BEC735D26401C040049004F /* HomeTableHeaderSectionView.xib in Resources */,
+				8BEC736226402A300049004F /* HomeTableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +575,7 @@
 			files = (
 				8B5A5EE12635C01600E62180 /* UIViewController.swift in Sources */,
 				8B93B77C263FF6E400206FF9 /* AddPaidItemViewController.swift in Sources */,
+				8BEC735B26401BFE0049004F /* HomeTableHeaderSectionView.swift in Sources */,
 				8B93B776263FDF0D00206FF9 /* Array.swift in Sources */,
 				8BA834C6263F07BA0005AEC0 /* PersonsListViewController.swift in Sources */,
 				8B93B772263FA66200206FF9 /* UserDataManager.swift in Sources */,
@@ -554,6 +585,7 @@
 				8B5A5F042635C29C00E62180 /* String.swift in Sources */,
 				8B5A5EDC2635BD5000E62180 /* PromptPayQRCodeViewController.swift in Sources */,
 				8B93B774263FC58500206FF9 /* UIAlertController.swift in Sources */,
+				8BEC736026402A2C0049004F /* HomeTableHeaderView.swift in Sources */,
 				8B5A5EB92635BA4E00E62180 /* BaseViewController.swift in Sources */,
 				A1C333BB238072E900AF73BF /* AddPersonViewController.swift in Sources */,
 				8B5A5EE62635C04E00E62180 /* Storyboard.swift in Sources */,

@@ -14,8 +14,6 @@ class PersonsListTableViewCell: UITableViewCell {
     @IBOutlet weak var personImageView:UIImageView!
     @IBOutlet weak var checkmarkContainerView:UIView!
     @IBOutlet weak var checkmarkIcon:UIImageView!
-    
-//    checkmark.circle.fill
 
     override func prepareForReuse() {
         super.prepareForReuse()

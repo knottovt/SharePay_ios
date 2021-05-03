@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Action
 
 class HomeViewModel {
     
@@ -28,11 +29,13 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView:UITableView!
     
     var viewModel = HomeViewModel()
+    var tableHeaderView = HomeTableHeaderView.loadFromNib(of: HomeTableHeaderView.self)
+    
     private let bag = DisposeBag()
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+        self.tableView.setTableHeaderView(self.tableHeaderView)
     }
     
     func configure() {
@@ -53,7 +56,16 @@ class HomeViewController: BaseViewController {
     
     
     func bindViewModel() {
+        SessionManager.shared.promptPay.bind { [weak self] (promptPay) in
+            self?.tableHeaderView.promtPayIdLabel.text = promptPay?.id
+            self?.tableHeaderView.promtPayQRImageView.setImageWith(stringUrl: promptPay?.qrCodeUrl())
+        }.disposed(by: self.bag)
         
+        self.tableHeaderView.promtPayContainerView.rx.tapGesture { _, delegate in
+            delegate.simultaneousRecognitionPolicy = .never
+        }.when(.recognized).bind { [weak self] (_) in
+            self?.alertAddPromptPay()
+        }.disposed(by: self.bag)
     }
     
     
@@ -91,7 +103,24 @@ extension UIAlertController {
 }
 
 extension HomeViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard section == 0 else { return nil }
+        let view = HomeTableHeaderSectionView.loadFromNib(of: HomeTableHeaderSectionView.self)
+        view.addButton.rx.action = CocoaAction { [weak self] in
+            guard let `self` = self else { return .empty() }
+            AddPaidItemViewController.present(at: self)
+            return .empty()
+        }
+        return view
+    }
+    
 }

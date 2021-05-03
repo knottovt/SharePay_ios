@@ -51,6 +51,13 @@ class AddPaidItemViewController: BaseViewController {
     var viewModel = AddPaidItemViewModel()
     private let bag = DisposeBag()
     
+    class func present(at viewController: UIViewController) {
+        let vc = self.newInstance(of: self, storyboard: .main)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        viewController.present(vc, animated: true, completion: nil)
+    }
+    
     func configure() {
         self.contentView.setViewCornerRadius(16)
         self.nameTextField.inputAccessoryView = self.doneToolbar()
@@ -58,9 +65,12 @@ class AddPaidItemViewController: BaseViewController {
         self.priceTextField.keyboardType = .decimalPad
         
         self.tableView.allowsMultipleSelection = true
+        self.tableView.keyboardDismissMode = .onDrag
         self.tableView.tableFooterView = UIView()
         self.tableView.register(cell: PersonsListTableViewCell.self)
         self.tableView.rx.setDelegate(self).disposed(by: self.bag)
+        
+        self.addButton.setViewCornerRadius(10)
     }
     
     func bindViewModel() {
@@ -77,17 +87,11 @@ class AddPaidItemViewController: BaseViewController {
         }.when(.recognized).bind { [weak self] (_) in
             self?.dismiss(animated: true, completion: nil)
         }.disposed(by: self.bag)
-        
+
         self.closeButton.rx.tap.bind { [weak self] in
             self?.dismiss(animated: true, completion: nil)
         }.disposed(by: self.bag)
         
-        self.contentView.rx.tapGesture { (_, delegate) in
-            delegate.simultaneousRecognitionPolicy = .never
-        }.when(.recognized).bind { [weak self] (_) in
-            self?.view.endEditing(true)
-        }.disposed(by: self.bag)
-
         self.addButton.rx.tap.bind { [weak self] in
             self?.addPaidItem()
         }.disposed(by: self.bag)
