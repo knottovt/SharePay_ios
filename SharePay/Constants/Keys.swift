@@ -11,4 +11,5 @@ import Foundation
 struct Keys {
     static let promptPay = "promptPay"
     static let persons = "persons"
+    static let paidItems = "paidItems"
 }

@@ -24,13 +24,17 @@ class AddPaidItemViewModel {
         SessionManager.shared.persons.bind(to: self.dataSource).disposed(by: self.bag)
     }
     
-    func createPaidItem(persons:[Person]) {
+    func createPaidItem(persons:[Person], completion: @escaping () -> ()) {
         guard let name = self.name.value, name.isValid(),
               let priceString = self.price.value,
               let price = Double(priceString) else {
             return
         }
         let paidItem = PaidItem(name: name, price: price, persons: persons)
+        var values = SessionManager.shared.paidItems.value
+        values.append(paidItem)
+        SessionManager.shared.paidItems.accept(values)
+        completion()
     }
     
 }
@@ -103,7 +107,9 @@ class AddPaidItemViewController: BaseViewController {
         selectedRow.forEach { row in
             persons.append(SessionManager.shared.persons.value[row])
         }
-        self.viewModel.createPaidItem(persons: [])
+        self.viewModel.createPaidItem(persons: persons) { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
 
 }

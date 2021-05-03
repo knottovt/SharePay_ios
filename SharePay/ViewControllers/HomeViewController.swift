@@ -15,13 +15,12 @@ class HomeViewModel {
     
     var dataSource = BehaviorRelay<[PaidItem]>(value: [])
     
+    private let bag = DisposeBag()
+    
     init() {
-        
+        SessionManager.shared.paidItems.bind(to: self.dataSource).disposed(by: self.bag)
     }
     
-    func addPaidItem() {
-        
-    }
 }
 
 class HomeViewController: BaseViewController {
@@ -40,6 +39,7 @@ class HomeViewController: BaseViewController {
     
     func configure() {
         self.tableView.tableFooterView = UIView()
+        self.tableView.register(cell: PaidItemTableViewCell.self)
         self.tableView.rx.setDelegate(self).disposed(by: self.bag)
         self.configureBarButton()
     }
@@ -56,9 +56,18 @@ class HomeViewController: BaseViewController {
     
     
     func bindViewModel() {
+        SessionManager.shared.paidItems
+            .map({String(format: "%.2f", $0.compactMap({$0.price}).reduce(0, +)) + " THB"})
+            .bind(to: self.tableHeaderView.totalValueLabel.rx.text).disposed(by: self.bag)
+        
         SessionManager.shared.promptPay.bind { [weak self] (promptPay) in
             self?.tableHeaderView.promtPayIdLabel.text = promptPay?.id
             self?.tableHeaderView.promtPayQRImageView.setImageWith(stringUrl: promptPay?.qrCodeUrl())
+        }.disposed(by: self.bag)
+        
+        self.viewModel.dataSource.bind(to: self.tableView.rx.items(cellIdentifier: PaidItemTableViewCell.identifier(), cellType: PaidItemTableViewCell.self)) {
+            (row, item, cell) in
+            cell.configure(item: item)
         }.disposed(by: self.bag)
         
         self.tableHeaderView.promtPayContainerView.rx.tapGesture { _, delegate in
@@ -121,6 +130,25 @@ extension HomeViewController: UITableViewDelegate {
             return .empty()
         }
         return view
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let editAction = UIContextualAction(style: .normal, title: nil) { (action, view, completionHandler) in
+            //
+            completionHandler(true)
+        }
+        editAction.title = "Edit"
+        editAction.backgroundColor = .systemYellow
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: nil) { (action, view, completionHandler) in
+            //
+            completionHandler(true)
+        }
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = .systemRed
+        
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+        return configuration
     }
     
 }

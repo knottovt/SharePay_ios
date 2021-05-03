@@ -47,6 +47,6 @@ extension PaidItem: Codable {
     }
     
     func pricePerPerson() -> Double {
-        return self.price ?? 0 / Double(self.persons.count)
+        return Double(self.price ?? 0) / Double(self.persons.count)
     }
 }

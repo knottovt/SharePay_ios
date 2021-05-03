@@ -19,6 +19,8 @@ class SessionManager: NSObject {
     
     var persons = BehaviorRelay<[Person]>(value: [])
     
+    var paidItems = BehaviorRelay<[PaidItem]>(value: [])
+    
     override init() {
         super.init()
         self.loadSession()
@@ -30,14 +32,21 @@ class SessionManager: NSObject {
         self.persons.bind { (persons) in
             UserDataManager.shared.saveObject(persons, key: Keys.persons)
         }.disposed(by: self.bag)
+        
+        self.paidItems.bind { (promptPay) in
+            UserDataManager.shared.saveObject(promptPay, key: Keys.paidItems)
+        }.disposed(by: self.bag)
     }
     
     func loadSession() {
+        if let promptPay = UserDataManager.shared.retrieveObject(type: PromptPay.self, key: Keys.promptPay) {
+            self.promptPay.accept(promptPay)
+        }
         if let persons = UserDataManager.shared.retrieveObject(type: [Person].self, key: Keys.persons) {
             self.persons.accept(persons)
         }
-        if let promptPay = UserDataManager.shared.retrieveObject(type: PromptPay.self, key: Keys.promptPay) {
-            self.promptPay.accept(promptPay)
+        if let paidItems = UserDataManager.shared.retrieveObject(type: [PaidItem].self, key: Keys.paidItems) {
+            self.paidItems.accept(paidItems)
         }
     }
     
